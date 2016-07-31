@@ -5,7 +5,7 @@
     "zeatful"
   ],
   "description": "making a custom braintree integration",
-  "main": "basicBrainTreeForm.js",
+  "main": "directives/basicBrainTreeForm.js",
   "keywords": [
     "angular",
     "braintree",
@@ -22,6 +22,7 @@
     "tests"
   ],
   "dependencies": {
-	   "angular": "~1.5.5"
+	   "angular": "~1.5.5",
+     "braintree-web": "~2.27.0"
   }
 }
