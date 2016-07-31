@@ -1,0 +1,27 @@
+{
+  "name": "angular-braintree-integration",
+  "homepage": "https://github.com/zeatful/angular-braintree-integration",
+  "authors": [
+    "zeatful"
+  ],
+  "description": "making a custom braintree integration",
+  "main": "directive.js",
+  "keywords": [
+    "angular",
+    "braintree",
+    "payments",
+    "paypal"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": [
+	"angular": "~1.5.4"
+  ]
+}
