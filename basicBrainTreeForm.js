@@ -12,9 +12,9 @@ angular.module('zeatful.angular-braintree-integration', []).
                     '<input type="text" class="form-control" id="full-name" placeholder="Full Name of Card Holder">'+
                   '</div>'+
                   '<button type="submit" class="btn btn-default">Submit</button>'+
-                  '</form>'
+                  '</form>',
       link: function(scope, element, attrs) {
           // functional logic
-      };
+      }
     };
   });
