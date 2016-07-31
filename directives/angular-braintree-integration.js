@@ -1,13 +1,13 @@
 
-var braintreeWeb = require('braintree-web')
-var braintreeFactory = require('./braintree-factory')
-var abi = angular.module('zeatful.angular-braintree-integration', [])
+var braintreeWeb = require('braintree-web');
+var braintreeFactory = require('./braintree-factory');
+var abi = angular.module('zeatful.angular-braintree-integration', []);
 
 abi.factor('$braintree', [
   'clientTokenPath',
   '$http',
   braintreeFactory(braintreeWeb)
-])
+]);
 
 abi.directive('basicBrainTreeForm', function() {
     return {
@@ -25,9 +25,9 @@ abi.directive('basicBrainTreeForm', function() {
                   '<button type="submit" class="btn btn-default">Submit</button>'+
                   '</form>',
       controller: ['$scope', '$braintree', function($scope, $braintree){
-        var options = $scope.options || {}
-        options.container = 'bt-dropin'
-        $braintree.setupDropin(options)
+        var options = $scope.options || {};
+        options.container = 'bt-dropin';
+        $braintree.setupDropin(options);
       }]
     };
   });

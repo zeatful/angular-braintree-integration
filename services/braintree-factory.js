@@ -1,26 +1,26 @@
 function braintreeFactory (braintree) {
   return function braintreeAngular (clientTokenPath, $http) {
-    var $braintree = {}
+    var $braintree = {};
 
-    $braintree.clientToken = null
+    $braintree.clientToken = null;
 
     Object.keys(braintree).forEach(function (key) {
       $braintree[key] = braintree[key]
     })
 
     $braintree.getClientToken = function (params) {
-      var path = clientTokenPath
+      var path = clientTokenPath;
 
       if (params) {
-        path += '?'
+        path += '?';
         path += Object.keys(params).map(function (key) {
-          var value = params[key]
+          var value = params[key];
           return key + '=' + value
         }).join('&')
       }
 
       return $http.get(path)
-    }
+    };
 
     $braintree.setupBasic = function (options) {
       $braintree.getClientToken()
@@ -30,10 +30,10 @@ function braintreeFactory (braintree) {
         .error(function (data, status) {
           console.error('error fetching client token at ' + clientTokenPath, data, status)
         })
-    }
+    };
 
     return $braintree
   }
 }
 
-module.exports = braintreeFactory
+module.exports = braintreeFactory;
