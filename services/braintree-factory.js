@@ -6,7 +6,7 @@ function braintreeFactory (braintree) {
 
     Object.keys(braintree).forEach(function (key) {
       $braintree[key] = braintree[key]
-    })
+    });
 
     $braintree.getClientToken = function (params) {
       var path = clientTokenPath;
