@@ -1,6 +1,6 @@
 
 var braintreeWeb = require('braintree-web');
-var braintreeFactory = require('./braintree-factory');
+var braintreeFactory = require('./services/braintree-factory');
 var abi = angular.module('zeatful.angular-braintree-integration', []);
 
 abi.factory('$braintree', [
