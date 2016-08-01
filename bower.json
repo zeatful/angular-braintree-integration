@@ -5,7 +5,7 @@
     "zeatful"
   ],
   "description": "making a custom braintree integration",
-  "main": "directives/angular-braintree-integration.js",
+  "main": "angular-braintree-integration.js",
   "keywords": [
     "angular",
     "braintree",
