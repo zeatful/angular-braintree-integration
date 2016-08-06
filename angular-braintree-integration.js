@@ -1,8 +1,5 @@
-
-/**
 var braintreeWeb = require('braintree-web');
 var braintreeFactory = require('./braintree-factory');
-*/
 angular.module('zeatful.angular-braintree-integration', [])
   .factory('$braintree', [
     'clientTokenPath',
