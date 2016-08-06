@@ -1,5 +1,6 @@
 function braintreeFactory (braintree) {
-  return function braintreeAngular (clientTokenPath, $http) {
+
+  /**return function braintreeAngular (clientTokenPath, $http) {
     var $braintree = {};
 
     $braintree.clientToken = null;
@@ -34,6 +35,7 @@ function braintreeFactory (braintree) {
 
     return $braintree
   }
+  **/
 }
 
 module.exports = braintreeFactory;
